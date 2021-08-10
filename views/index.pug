@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  .site-mobile-menu.site-navbar-target
+    .site-mobile-menu-header
+      .site-mobile-menu-close.mt-3
+        span.icon-close2.js-menu-toggle
+    .site-mobile-menu-body
+  header.site-navbar.site-navbar-target.bg-white(role='banner')
+    .container
+      .row.align-items-center.position-relative
+        .col-lg-4
+          nav.site-navigation.text-right.ml-auto(role='navigation')
+            ul.site-menu.main-menu.js-clone-nav.ml-auto.d-none.d-lg-block
+              li.active
+                a.nav-link(href='/') Home
+              li
+                a.nav-link(href='/projects') Projects
+              li
+                a.nav-link(href='/events') Events
+        .col-lg-4.text-center
+          .site-logo
+            a(href='/') Computing Association of Mount Royal University
+          .ml-auto.toggle-button.d-inline-block.d-lg-none
+            a.site-menu-toggle.py-5.js-menu-toggle.text-black(href='#')
+              span.icon-menu.h3.text-black
+        .col-lg-4
+          nav.site-navigation.text-left.mr-auto(role='navigation')
+            ul.site-menu.main-menu.js-clone-nav.ml-auto.d-none.d-lg-block
+              li
+                a.nav-link(href='/about') About
+              li
+                a.nav-link(href='/community') Community
+              li
+                a.nav-link(href='/contact') Contact
+  .hero
+    #eventShowcase.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#eventShowcase' data-slide-to='0')
+        li(data-target='#eventShowcase' data-slide-to='1')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100.showcaseImg( src='images/hero_1.jpg' alt='First slide')
+        .carousel-item
+          img.d-block.w-100.showcaseImg(src='images/hero_3.jpg' alt='Second slide')
+      a.carousel-control-prev(href='#eventShowcase' role='button' data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#eventShowcase' role='button' data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
