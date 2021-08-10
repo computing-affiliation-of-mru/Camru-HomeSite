@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  .site-mobile-menu.site-navbar-target
+    .site-mobile-menu-header
+      .site-mobile-menu-close.mt-3
+        span.icon-close2.js-menu-toggle
+    .site-mobile-menu-body
+  header.site-navbar.site-navbar-target.bg-white(role='banner')
+    .container
+      .row.align-items-center.position-relative
+        .col-lg-4
+          nav.site-navigation.text-right.ml-auto(role='navigation')
+            ul.site-menu.main-menu.js-clone-nav.ml-auto.d-none.d-lg-block
+              li
+                a.nav-link(href='/') Home
+              li
+                a.nav-link(href='/projects') Projects
+              li
+                a.nav-link(href='/events') Events
+        .col-lg-4.text-center
+          .site-logo
+            a(href='/') Computing Association of Mount Royal University
+          .ml-auto.toggle-button.d-inline-block.d-lg-none
+            a.site-menu-toggle.py-5.js-menu-toggle.text-black(href='#')
+              span.icon-menu.h3.text-black
+        .col-lg-4
+          nav.site-navigation.text-left.mr-auto(role='navigation')
+            ul.site-menu.main-menu.js-clone-nav.ml-auto.d-none.d-lg-block
+              li.active
+                a.nav-link(href='/about') About
+              li
+                a.nav-link(href='/community') Community
+              li
+                a.nav-link(href='/contact') Contact
+  .hero
+    #about.container-fluid
+      .row
+        .col-sm-8
+          h2 About CAMRU
+          br
+          h4
+            | The Computing Association of Mount Royal University (CAMRU) has been a student-led club  since the inception of the BCIS program at MRU over a decade ago that is officially backed by the Faculty of Science and Computing.
+          br
+          p
+            |  Our hope is that your time as a student at MRU is improved by our efforts; if we can do that, then our duties as club executives will have been worth it.
+          br
+          button.btn.btn-outline-secondary.btn-lg Get in Touch
+        .col-sm-4
+          span.glyphicon.glyphicon-signal.logo
+    .container-fluid.bg-grey
+      .row
+        .col-sm-4
+          span.glyphicon.glyphicon-globe.logo.slideanim
+        .col-sm-8
+          h2 Our Values
+          br
+          h4
+            strong MISSION:
+            |  Our purpose has always been to serve students interested in computing. We work to do this primarily through organizing events that provide value in a multitude of ways. Whether by hosting our annual networking event, a simple games night, or something in between, fostering a strong community is our top priority.
+          br
+          p
+            |  Through the years CAMRU has helped many students find work terms, internships, and even full-time jobs through our networking events and sharing information from local companies we work with. We have been the catalyst to innumerable friendships and professional connections that will last a lifetime. As well, we have assisted students with academic, professional, and social support they have needed over the years.
+
