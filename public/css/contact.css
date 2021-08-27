@@ -6,6 +6,10 @@ body, html {
     background-color: #f7f7fd;
     font-family: 'Raleway', sans-serif;
 }
+.p{
+    color: #ffffff !important;
+}
+
 
 a:hover {
     text-decoration: none;
