@@ -1,0 +1,80 @@
+extends layout
+
+block content
+    link(rel='stylesheet' href='css/contact.css')
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand.text-center(href='#') Computing Association of Mount Royal University
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+
+            .collapse.navbar-collapse(id='navbarSupportedContent')
+                ul.navbar-nav.mr-auto.text-right
+                    li.nav-item
+                        a.nav-link(href='/') Home
+                    li.nav-item
+                        a.nav-link(href='/about') About
+                    li.nav-item
+                        a.nav-link(href='/events') Events
+                    li.nav-item
+                        a.nav-link(href='/projects') Projects
+                    li.nav-item.active
+                        a.nav-link(href='/contact') Contact Us
+                //ul.navbar-nav.text-left
+                //  li.nav-item
+                //    a.nav-link(href='/login') Login
+                //  li.nav-item.dropdown
+                //    a.nav-link.dropdown-toggle(id='navbarDropdownMenuLink', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Accounts
+                //    .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                //      a.dropdown-item(href='#') Settings
+    .hero
+        .container
+            .row.justify-content-center
+                // Left Column
+                .col-lg-6.left-column
+                    // Contact Form Title
+                    .tittle-container.text-center
+                        h2.tittle Get in Touch
+                        h4.subtitle We&apos;d love hear from you
+                    // Form
+                    form.contact-form(method='POST' action='contact')
+                        // Name
+                        .form-group.row
+                            label.col-lg-4.col-form-label Your Name
+                            .col-lg-8
+                                input.form-control.form-control-sm(type='text' name='name')
+                        // Email
+                        .form-group.row
+                            label.col-lg-4.col-form-label Email Address
+                            .col-lg-8
+                                input.form-control.form-control-sm(type='email' name='email')
+                        // Message
+                        .form-group.row
+                            label.col-lg-4.col-form-label Message
+                            .col-lg-8
+                                textarea.form-control.form-control-sm(name='message' rows='5' required='')
+                        // Submit Button
+                        .text-right
+                            input.btn.btn-submit(type='submit' value='Submit')
+                // End Left Coloumn
+                // Right Column
+                .col-lg-4.right-column
+                    // Company Info
+                    .contact-info
+                        h3 Contact Info
+                        p
+                            i.fas.fa-map-marker-alt
+                            | &nbsp; Fill out the form to get in touch<br>
+                            | &nbsp; or email us at
+                            | &nbsp; Contact@CAMRU.ca
+                    // Social Icons
+                    .social
+                        .text-center.center-block
+                            a(href='#')
+                                i.icon.fab.fa-facebook-f
+                            a(href='#')
+                                i.icon.fab.fa-twitter
+                            a(href='#')
+                                i.icon.fab.fa-linkedin-in
+                // Right Column
+
