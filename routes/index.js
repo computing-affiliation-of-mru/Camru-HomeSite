@@ -12,6 +12,10 @@ router.get('/about', function(req, res, next) {
     res.render('about', { title: 'About CAMRU' });
 });
 
+router.get('/events', function(req, res, next) {
+    res.render('events', { title: 'CAMRU Events' });
+});
+
 router.get('/contact', function(req, res, next) {
     res.render('contact', { title: 'Contact Us' });
 });
