@@ -14,7 +14,7 @@ block content
                         a.nav-link(href='/') Home
                     li.nav-item
                         a.nav-link(href='/about') About
-                    li.nav-item.active
+                    li.nav-item
                         a.nav-link(href='/events') Events
                     //li.nav-item
                     //    a.nav-link(href='/projects') Projects
@@ -28,20 +28,16 @@ block content
                 //    .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
                 //      a.dropdown-item(href='#') Settings
     .hero
-        h1.text-center CAMRU Q&A and Mingle
-        p.text-center Come ask questions of faculty and senior students, get to know your peers, and have a good time.
-        p.text-center The first have of the event will be the Q&A, and once we're done with that we will move on to a casual mingle with board games and pizza
-        #eventbrite-widget-container-166109180029
-        script(src='https://www.eventbrite.ca/static/widgets/eb_widgets.js')
-        script(type='text/javascript').
-            var exampleCallback = function () {
-                window.location.replace("http://www.camru.ca/thankyou");
-            };
-            window.EBWidgets.createWidget({
-                widgetType: 'checkout',
-                eventId: '166109180029',
-                iframeContainerId: 'eventbrite-widget-container-166109180029',
-                iframeContainerHeight: 850,
-                onOrderComplete: exampleCallback
-            });
+        .jumbotron.text-center
+            h1.display-3 Thank You!
+            p.lead
+                strong Please check your email
+                |  for event details. They will be sent out a couple days before the event
+            hr
+            p
+                | Having trouble?
+                a(href='https://www.camru.ca/contact') &nbsp; Contact us
+            p.lead
+                a.btn.btn-primary.btn-sm(href='https://www.camru.ca' role='button') Continue to homepage
+
 

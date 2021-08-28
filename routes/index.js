@@ -16,6 +16,10 @@ router.get('/events', function(req, res, next) {
     res.render('events', { title: 'CAMRU Events' });
 });
 
+router.get('/thankyou', function(req, res, next) {
+    res.render('thankyou', { title: 'Thank you!' });
+});
+
 router.get('/contact', function(req, res, next) {
     res.render('contact', { title: 'Contact Us' });
 });
