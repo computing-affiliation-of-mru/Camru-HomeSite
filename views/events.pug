@@ -34,14 +34,11 @@ block content
         #eventbrite-widget-container-166109180029
         script(src='https://www.eventbrite.ca/static/widgets/eb_widgets.js')
         script(type='text/javascript').
-            var exampleCallback = function () {
-                window.location.replace("http://www.camru.ca/thankyou");
-            };
+
             window.EBWidgets.createWidget({
                 widgetType: 'checkout',
                 eventId: '166109180029',
                 iframeContainerId: 'eventbrite-widget-container-166109180029',
                 iframeContainerHeight: 750,
-                onOrderComplete: exampleCallback
             });
 
