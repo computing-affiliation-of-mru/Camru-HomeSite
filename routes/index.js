@@ -59,6 +59,7 @@ router.post('/contact', (req, res) => {
     const mailOptions = {
         from: config.from,
         to: config.to,
+        replyTo: req.body.email,
         subject: config.subject,
         html: output,
     };
