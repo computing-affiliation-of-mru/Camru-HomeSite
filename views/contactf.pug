@@ -2,6 +2,7 @@ extends layout
 
 block content
     link(rel='stylesheet' href='css/contact.css')
+    link(rel='stylesheet' href='css/fontawesome.min.css')
     body
         nav.navbar.navbar-expand-lg.navbar-light.bg-light
             a.navbar-brand.text-center.camru-nav-big(href='#') Computing Association of Mount Royal University
@@ -67,19 +68,20 @@ block content
                     // Company Info
                     .contact-info
                         h3 Contact Info
+                        p &nbsp; Fill out the form to get in touch<br>
                         p
-                            i.fas.fa-map-marker-alt
-                            | &nbsp; Fill out the form to get in touch<br>
-                            | &nbsp; or email us at
-                            | &nbsp; Contact@CAMRU.ca
+                            i.fa-envelope.fas
+                            | Contact@CAMRU.ca
                     // Social Icons
                     .social
                         .text-center.center-block
-                            a(href='#')
+                            a(href='https://www.facebook.com/groups/231247982172687' target="_blank")
                                 i.icon.fab.fa-facebook-f
-                            a(href='#')
+                            a(href='https://twitter.com/MRU_Computing' target="_blank")
                                 i.icon.fab.fa-twitter
-                            a(href='#')
+                            a(href='https://www.linkedin.com/groups/13951329/' target="_blank")
                                 i.icon.fab.fa-linkedin-in
+                            a(href='https://discord.gg/SDdB7DwZYz' target="_blank")
+                                i.icon.fab.fa-discord
                 // Right Column
 
