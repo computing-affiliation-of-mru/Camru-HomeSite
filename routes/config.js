@@ -6,7 +6,7 @@ module.exports = {
     host: 'camru.ca', // Sender email smtp
     port: '26', // Sender email port
     user: 'contact@camru.ca', // Sender email username
-    pass: 'KidneyBeans**', // Sender email password
+    pass: '[REDACTED]', // Sender email password
 
     // Your email to receive notification (receiver)
     from: '"Contact Me" <contact@camru.ca>', // Sender email address
