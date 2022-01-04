@@ -1,0 +1,4 @@
+# ignore login info
+routes/config.js
+
+node_modules/
